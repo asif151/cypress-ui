@@ -1,0 +1,31 @@
+{
+  "name": "technicalassignment",
+  "version": "1.0.0",
+  "description": "Assignment",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "report": "marge cypress/reports/mochawesome.json -o cypress/reports",
+    "generate-report": "npx mochawesome-merge cypress/reports/mochawesome/*.json > cypress/reports/mochawesome.json && npx mochawesome-report-generator cypress/reports/mochawesome.json -o cypress/reports/html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cypress": "^1.1.3",
+    "@types/jest": "^29.5.12",
+    "@types/mocha": "^10.0.7",
+    "cypress": "^13.14.2",
+    "cypress-mochawesome-reporter": "^3.1.0",
+    "cypress-terminal-report": "^6.1.3",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}

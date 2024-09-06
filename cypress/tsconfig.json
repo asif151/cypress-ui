@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "esNext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "target": "es5",
+    "lib": ["dom", "es2015"],
+    "types": [
+      "cypress",
+      "node",
+      "cypress-real-events"
+    ]
+  },
+  "include": ["**/*.ts"]
+}
