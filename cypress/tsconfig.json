@@ -12,5 +12,6 @@
       "cypress-real-events"
     ]
   },
-  "include": ["**/*.ts"]
+  "include": ["**/*.ts"],
+
 }
